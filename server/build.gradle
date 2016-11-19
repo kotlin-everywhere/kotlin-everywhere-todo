@@ -1,0 +1,15 @@
+plugins {
+    id 'nebula.kotlin' version '1.0.5'
+} 
+
+sourceSets {
+    main.kotlin.srcDirs += "$projdctDir/../model"
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.21'
+}

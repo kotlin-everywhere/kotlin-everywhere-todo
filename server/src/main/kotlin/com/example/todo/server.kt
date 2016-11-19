@@ -14,7 +14,7 @@ val remote = TodoRemote().apply {
         todos.find { it.id == param.id }!!
     }
     delete { id ->
-        todos = todos.filter { it.id == id }.toTypedArray()
+        todos = todos.filter { it.id != id }.toTypedArray()
     }
 }
 

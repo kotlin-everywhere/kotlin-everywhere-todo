@@ -4,3 +4,6 @@ build/
 
 #intellij
 .idea/
+
+#android
+local.properties

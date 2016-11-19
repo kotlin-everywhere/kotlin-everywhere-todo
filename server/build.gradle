@@ -3,13 +3,17 @@ plugins {
 } 
 
 sourceSets {
-    main.kotlin.srcDirs += "$projdctDir/../model"
+    main.kotlin.srcDirs += "$projectDir/../model"
 }
 
 repositories {
     jcenter()
+    maven { url "https://jitpack.io" }
 }
 
 dependencies {
-    compile 'org.slf4j:slf4j-api:1.7.21'
+    compile 'org.apache.logging.log4j:log4j-slf4j-impl:2.5'
+    compile 'org.apache.logging.log4j:log4j-web:2.5'
+
+    compile 'com.github.kotlin-everywhere:rpc-servlet:cbd80592a3'
 }
